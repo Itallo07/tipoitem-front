@@ -1,0 +1,18 @@
+<form>
+    <h1>ATUALIZANDO UM NOVO TIPO DE ITEM</h1>
+    <mat-form-field class="form">
+        <mat-label>Nome:</mat-label>
+        <input matInput [(ngModel)]="tipoitem.tipoItem" type="text" name="nome" placeholder="Ex: teste01">
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Descrição:</mat-label>
+        <textarea matInput [(ngModel)]="tipoitem.descricao" type="text" name="descricao" placeholder="Ex: texte xxx"></textarea>
+    </mat-form-field>
+ 
+    <div class="buttons">
+        <button (click)="update()" class="mat-elevation-z8" mat-stroked-button color="primary"> ATUALIZAR </button>
+        <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn"> CANCELAR </button>
+
+    </div>
+</form>
